@@ -1,0 +1,66 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.packages{
+    background-color: rgb(209, 209, 209);
+    overflow: hidden;
+    padding: 20px 100px;
+}
+
+.outer-div{
+    float: left;
+    width: 25%;
+}
+
+.inner-div{
+    background-color: white;
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.bg-blue
+{
+    background-color: blue;
+    color: white;
+}
+
+.plan{
+    background-color: blue;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+.bg-blue .plan{
+    background-color: white;
+    color: blue;
+}
+
+.btn{
+    padding: 20px 10px;
+}
+
+.btn span{
+    border: 1px solid blue;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn span:hover{
+    background-color: blue;
+    color: white;
+}
+
+.blue-btn span{
+    border: 1px solid white;
+}
+
+.blue-btn span:hover{
+    background-color: white;
+    color: blue;
+}
