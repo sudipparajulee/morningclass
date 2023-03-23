@@ -1,0 +1,32 @@
+body{
+    font-family: sans-serif;
+}
+
+.services{
+    background-color: rgb(235, 234, 234);
+    padding: 50px 150px;
+}
+
+.heading{
+    text-align: center;
+}
+
+.mydiv{
+    display: flex;
+}
+
+.div1, .div2, .div3{
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    /* padding: 20px; */
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgb(214, 210, 210);
+    flex: 1;
+}
+
+.bg-blue{
+    background-color: rgb(38, 38, 107);
+    color: white;
+    padding: 20px;
+    border-radius: 10px 10px 0px 0px;
+}
