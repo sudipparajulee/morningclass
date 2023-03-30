@@ -1,0 +1,100 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.navbar{
+    background-color: blue;
+}
+
+.menu{
+    list-style-type: none;
+    padding: 20px;
+    margin: 0;
+    text-align: right;
+}
+
+.menu li{
+    display: inline;
+    margin: 10px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.active{
+    background-color: red;
+    border-radius: 10px;
+}
+
+#about{
+    padding: 25px 100px;
+}
+
+.section-heading{
+    background-color: rgb(157, 148, 148);
+    color: white;
+    padding: 30px 10px;
+}
+
+.about-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.about-content img{
+    width: 100%;
+}
+
+.about-text h3{
+    color: blue;
+}
+
+.about-text p{
+    text-align: justify;
+    color: rgb(52, 49, 49);
+}
+
+.footer{
+    background-color: rgb(50, 50, 151);
+    color: white;
+    padding: 20px 50px 0px 50px;
+}
+
+.upper-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.upper-footer img{
+    width: 100px;
+}
+
+.quick-links{
+    padding-left: 50px;
+}
+
+.quick-links ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.quick-links li{
+    margin-top: 10px;
+}
+
+.quick-links a{
+    color: white;
+    text-decoration: none;
+}
+
+.lower-footer{
+    padding: 20px 5px;
+    display: flex;
+    justify-content: space-between;
+}
