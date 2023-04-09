@@ -1,0 +1,277 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.topbar{
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+
+.navbar{
+    background-color: rgb(255, 253, 253);
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgb(205, 196, 196);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar img{
+    width: 150px;
+}
+
+.menu{
+    list-style-type: none;
+    padding: 20px;
+    margin: 0;
+    text-align: right;
+}
+
+.menu li{
+    display: inline;
+    margin: 10px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: rgb(63, 63, 67);
+    font-weight: bold;
+    padding: 10px;
+}
+
+.menu li{
+    position: relative;
+}
+
+.dropdown{
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    background-color: rgb(213, 213, 220);
+    padding: 0;
+    width: 100px;
+    display: none;
+}
+
+.menu li:hover .dropdown{
+    display: block;
+}
+
+.dropdown li{
+    display: block;
+    margin: 0;
+    padding: 10px 0px;
+}
+
+.active{
+    background-color: red;
+    border-radius: 10px;
+}
+
+#about{
+    padding: 25px 100px;
+}
+
+.section-heading{
+    background-color: rgb(157, 148, 148);
+    color: white;
+    padding: 30px 10px;
+}
+
+.about-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.about-content img{
+    width: 100%;
+}
+
+.about-text h3{
+    color: blue;
+}
+
+.about-text p{
+    text-align: justify;
+    color: rgb(52, 49, 49);
+}
+
+.footer{
+    background-color: rgb(50, 50, 151);
+    color: white;
+    padding: 20px 50px 0px 50px;
+}
+
+.upper-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.upper-footer img{
+    width: 100px;
+}
+
+.quick-links{
+    padding-left: 50px;
+}
+
+.quick-links ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.quick-links li{
+    margin-top: 10px;
+}
+
+.quick-links a{
+    color: white;
+    text-decoration: none;
+}
+
+.lower-footer{
+    padding: 20px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-form{
+    width: 500px;
+    background-color: aqua;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.input-group{
+    margin-top: 10px;
+    text-align: left;
+}
+
+.input-group input, .input-group textarea{
+    padding: 10px;
+    display: block;
+    width: 95%;
+    max-width: 95%;
+    border-radius: 10px;
+    border: none;
+    transition: 0.1s;
+}
+
+.input-group input:focus, .input-group textarea:focus{
+    /* outline: none; */
+    outline: 2px solid rgb(161, 161, 226);
+}
+
+.submit{
+    margin: 20px;
+}
+
+.submit input{
+    /* width: 20%; */
+    padding: 10px 40px;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.submit input:hover{
+    background-color: rgb(16, 16, 137);
+}
+
+.contact-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 150px;
+    gap: 20px;
+}
+
+.contact-form{
+    width: 500px;
+    background-color: aqua;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.product-section{
+    padding: 50px;
+}
+
+.product-section h2{
+    padding: 50px;
+    text-align: center;
+}
+
+.product-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 10px 50px;
+    
+}
+
+.product{
+    background-color: aliceblue;
+    box-shadow: 2px 2px 5px rgb(230, 225, 225);
+    padding: 20px;
+    position: relative;
+    transition: 0.4s;
+    z-index: 5;
+}
+
+.product:hover{
+    box-shadow: 2px 2px 8px rgb(220, 215, 215);
+}
+
+.product:hover img{
+    transform: scale(1.05);
+
+}
+
+.product img{
+    width: 100%;
+    transition: 0.4s;
+}
+
+.old-price{
+    text-decoration: line-through;
+}
+
+.new-price{
+    font-weight: bold;
+    font-size: larger;
+}
+
+.discount{
+    position: absolute;
+    top: 0;
+    right: 5px;
+    background-color: blue;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 10px;
+}
+
+.gotop{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 50;
+}
