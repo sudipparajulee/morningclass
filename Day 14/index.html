@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2 id="myheading"></h2>
+
+    <h2 id="myname">Sudip</h2>
+
+    <button onclick="myFunction()">Click Here</button>
+    <button onclick="myFunctionshow()">Click Here Again</button>
+    
+    <script>
+
+        function myFunction()
+        {
+            document.getElementById('myheading').innerHTML = "This is function";
+            document.getElementById('myheading').style.color = "red";
+            document.getElementById('myheading').style.backgroundColor = "yellow";
+            document.getElementById('myheading').style.display = "none";
+        }
+
+        function myFunctionshow()
+        {
+            document.getElementById('myheading').style.display = 'block';
+        }
+
+        // document.write('hello');
+        // document.write('<br>');
+        // document.write('hello again');
+
+        // document.getElementById('myheading').innerHTML = 'Hello this is heading';
+
+        // alert('Hello there');
+
+        // var name = prompt('What is you name?');
+
+        // confirm('Are you sure?');
+
+        // document.getElementById('myheading').innerHTML = name;
+
+        var a = 2;
+        var b = 2.3;
+        var total = a+b;
+        var text = "The sum of " + a + ' and ' + b + ' is ' + total;
+        
+        document.getElementById('myheading').innerHTML = text;
+        console.log(text);
+
+
+        var name = document.getElementById('myname').innerHTML;
+        // alert(name);
+
+
+    </script>
+</body>
+</html>
