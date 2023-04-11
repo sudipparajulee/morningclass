@@ -29,7 +29,7 @@
 </head>
 <body>
     <div class="container">
-        <input type="text" id="display">
+        <input type="text" id="display" value="0">
         <span id="input1"></span>
         <br>
         <div class="numbers">
@@ -45,6 +45,8 @@
             <button onclick="myInput('0')">0</button>
             <button onclick="addition()">+</button>
             <button onclick="calculate()">=</button>
+            <button onclick="clearform()">C</button>
+            <button onclick="cancelone()"><=</button>
         </div>
     </div>
 
@@ -52,7 +54,14 @@
         var input1=0;
         function myInput(x)
         {
+            if(document.getElementById('display').value == '0')
+            {
+                document.getElementById('display').value = x;
+            }
+            else
+            {
             document.getElementById('display').value += x;
+            }
         }
 
         function addition()
@@ -68,6 +77,18 @@
             document.getElementById('display').value = total;
             document.getElementById('input1').innerHTML = '';
 
+        }
+
+        function clearform(){
+            input1 = 0;
+            document.getElementById('display').value = '0';
+            document.getElementById('input1').innerHTML = '';
+        }
+
+        function cancelone()
+        {
+            var num = document.getElementById('display').value;
+            document.getElementById('display').value = num.slice(0,num.length-1);
         }
     </script>
 </body>
