@@ -44,6 +44,7 @@
             <button onclick="myInput('3')">3</button>
             <button onclick="myInput('0')">0</button>
             <button onclick="addition()">+</button>
+            <button onclick="subtraction()">-</button>
             <button onclick="calculate()">=</button>
             <button onclick="clearform()">C</button>
             <button onclick="cancelone()"><=</button>
@@ -52,6 +53,7 @@
 
     <script>
         var input1=0;
+        var operation = '';
         function myInput(x)
         {
             if(document.getElementById('display').value == '0')
@@ -69,11 +71,27 @@
             input1 = parseInt(document.getElementById('display').value);
             document.getElementById('display').value = '';
             document.getElementById('input1').innerHTML = input1 + " + ";
+            operation = 'add';
+        }
+
+        function subtraction()
+        {
+            input1 = parseInt(document.getElementById('display').value);
+            document.getElementById('display').value = '';
+            document.getElementById('input1').innerHTML = input1 + " - ";
+            operation = 'sub';
         }
 
         function calculate()
         {
-            var total = parseInt(document.getElementById('display').value) + input1;
+            if(operation == 'add')
+            {
+                var total = parseInt(document.getElementById('display').value) + input1;
+            }
+            if(operation == 'sub')
+            {
+            var total =  input1 - parseInt(document.getElementById('display').value);
+            }
             document.getElementById('display').value = total;
             document.getElementById('input1').innerHTML = '';
 
