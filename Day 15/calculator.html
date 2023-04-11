@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 130px;
+            background-color: aliceblue;
+            margin: auto;
+            padding: 40px;
+        }
+
+        .numbers{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            margin: 10px;
+        }
+
+        #input1{
+            font-size: 5px;
+            margin: -10px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="display">
+        <span id="input1"></span>
+        <br>
+        <div class="numbers">
+            <button onclick="myInput('7')">7</button>
+            <button onclick="myInput('8')">8</button>
+            <button onclick="myInput('9')">9</button>
+            <button onclick="myInput('4')">4</button>
+            <button onclick="myInput('5')">5</button>
+            <button onclick="myInput('6')">6</button>
+            <button onclick="myInput('1')">1</button>
+            <button onclick="myInput('2')">2</button>
+            <button onclick="myInput('3')">3</button>
+            <button onclick="myInput('0')">0</button>
+            <button onclick="addition()">+</button>
+            <button onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <script>
+        var input1=0;
+        function myInput(x)
+        {
+            document.getElementById('display').value += x;
+        }
+
+        function addition()
+        {
+            input1 = parseInt(document.getElementById('display').value);
+            document.getElementById('display').value = '';
+            document.getElementById('input1').innerHTML = input1 + " + ";
+        }
+
+        function calculate()
+        {
+            var total = parseInt(document.getElementById('display').value) + input1;
+            document.getElementById('display').value = total;
+            document.getElementById('input1').innerHTML = '';
+
+        }
+    </script>
+</body>
+</html>

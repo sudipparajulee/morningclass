@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="myFunction()">Click</button>
+    <h2 id="mytext">This is a text</h2>
+
+    <input type="text" id="username" placeholder="Enter Username">
+    <button onclick="submit()">Submit</button>
+
+    <br><br>
+
+    <input type="number" id="num1">
+    <input type="number" id="num2">
+    <p id="result"></p>
+    <button onclick="calculate()">Calculate</button>
+
+    <script>
+
+        function calculate()
+        {
+            var num1 = document.getElementById('num1').value;
+            var num2 = document.getElementById('num2').value;
+            var sum = parseInt(num1) + parseInt(num2);
+            document.getElementById('result').innerHTML = "The sum is " + sum;
+        }
+
+        function myFunction()
+        {
+            if(document.getElementById('mytext').style.display != 'none')
+            {
+                document.getElementById('mytext').style.display = 'none';
+            }
+            else
+            {
+                document.getElementById('mytext').style.display = 'block';
+            }
+        }
+
+        function submit()
+        {
+            var username = document.getElementById('username').value;
+            alert('Your username is '+username);
+        }
+    </script>
+</body>
+</html>
