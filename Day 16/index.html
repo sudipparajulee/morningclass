@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Progress Bar</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <input type="text" id="number">
+        <button onclick="progress()">Click Here</button>
+
+        <p class="progress-bar" id="progress-bar">
+            <span class="progress" id="progress">40%</span>
+        </p>
+
+
+        <script>
+            function progress()
+            {
+                var per = document.getElementById('number').value;
+
+                if(parseInt(per))
+                {
+                    if(per > 0 && per<=100)
+                    {
+                        document.getElementById('progress').innerHTML = per + "%";
+                        document.getElementById('progress').style.width = per + "%";
+                    }
+                    else
+                    {
+                        alert('The value must be between 0 and 100');
+                    }
+                }
+                else
+                {
+                    alert('Please input a valid number');
+                    document.getElementById('number').value = "";
+                    document.getElementById('number').focus();
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+.progress-bar
+{
+    background-color: aqua;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.progress{
+    background-color: red;
+    border-radius: 10px;
+    padding: 2px 0;
+    width: 40%;
+    display: block;
+    text-align: center;
+    color: white;
+}
