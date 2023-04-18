@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .progress-bar{
+            background-color: rgb(196, 199, 201);
+            border-radius: 5px;
+        }
+        #mybar{
+            background-color: red;
+            color: white;
+            transition: 0.5s;
+            border-radius: 5px;
+            width: 1%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar" id="progress-bar">
+        <p id="mybar">0%</p>
+    </div>
+    <button onclick="start()">Start</button>
+    <button id="showhidebtn" onclick="showHide()">Hide</button>
+    
+    <script>
+
+        function showHide()
+        {
+            var bar = document.getElementById('progress-bar');
+            var btn = document.getElementById('showhidebtn');
+            if(bar.style.display != 'none')
+            {
+                bar.style.display = 'none';
+                btn.innerHTML = 'Show';
+            }
+            else
+            {
+                bar.style.display = 'block';
+                btn.innerHTML = 'Hide';
+            }
+        }
+        var i=0;
+        var x;
+        function start()
+        {
+            if(i==0)
+            {
+            i=1;
+            var bar = document.getElementById('mybar');
+            var width = 1;
+            bar.style.width = width + "%";
+            bar.innerHTML = width + "%";
+            
+            x = setInterval(run,100);
+            function run()
+            {
+                if(width >= 100)
+                {
+                    clearInterval(x);
+                    i = 0;
+                }
+                else
+                {
+                    width++;
+                    bar.style.width = width + "%";
+                    bar.innerHTML = width + "%";
+                }
+            }
+        }
+        else
+        {
+            clearTimeout(x);
+            i=0;
+        }
+        }
+    </script>
+</body>
+</html>
