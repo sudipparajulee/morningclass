@@ -1,0 +1,57 @@
+body{
+    font-family: sans-serif;
+}
+
+.navbar{
+    background-color: blue;
+    padding: 10px;
+}
+
+.menu{
+    padding: 10px;
+    list-style-type: none;
+    text-align: right;
+}
+
+.menu li{
+    display: inline;
+    padding: 10px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar i{
+    display: none;
+}
+
+@media screen and (max-width:480px) {
+
+    .navbar i{
+        display: block;
+    }
+
+    .navbar{
+        text-align: right;
+        color: white;
+    }
+
+    .navbar ul{
+        text-align: left;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .mob{
+        text-align: left;
+        display: block;
+    }
+
+    .menu li{
+        display: block;
+    }
+}

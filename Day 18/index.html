@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar Example</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <i onclick="togglenav()" class="ri-menu-fill"></i>
+        <ul class="menu" id="menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Login</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function togglenav()
+        {
+            var menu = document.getElementById('menu');
+            if(menu.className == 'menu')
+            {
+                menu.className += ' mob';
+            }
+            else
+            {
+                menu.className = 'menu';
+            }
+        }
+    </script>
+</body>
+</html>
