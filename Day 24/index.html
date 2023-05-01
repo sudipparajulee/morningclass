@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1>Example for positions in Tailwindcss</h1>
+
+    <h2 class="my-5 text-center font-bold text-4xl">Our Products</h2>
+    <div class="grid grid-cols-4 gap-10 px-28">
+        <div class="p-4 rounded-lg bg-gray-200 relative">
+            <img src="https://hamroelectronics.com.np/images/product/JRMXDZVAS648_1637641087.jpg" alt="" class="w-full rounded-t-lg">
+            <p class="text-lg">Bolano Golden Stripe Watch For Ladies</p>
+            <p><span class="line-through text-lg font-bold">Rs.2175 /-</span> <span class="font-bold text-2xl">Rs. 1499 /-</span></p>
+            <span class="bg-blue-600 text-white px-2 rounded-lg absolute top-5">30% OFF</span>
+        </div>
+
+
+        <div class="p-4 rounded-lg bg-gray-200 relative">
+            <img src="https://hamroelectronics.com.np/images/product/JRMXDZVAS648_1637641087.jpg" alt="" class="w-full rounded-t-lg">
+            <p class="text-lg">Bolano Golden Stripe Watch For Ladies</p>
+            <p><span class="line-through text-lg font-bold">Rs.2175 /-</span> <span class="font-bold text-2xl">Rs. 1499 /-</span></p>
+            <span class="bg-blue-600 text-white px-2 rounded-lg absolute top-5">30% OFF</span>
+        </div>
+
+
+        <div class="p-4 rounded-lg bg-gray-200 relative">
+            <img src="https://hamroelectronics.com.np/images/product/JRMXDZVAS648_1637641087.jpg" alt="" class="w-full rounded-t-lg">
+            <p class="text-lg">Bolano Golden Stripe Watch For Ladies</p>
+            <p><span class="line-through text-lg font-bold">Rs.2175 /-</span> <span class="font-bold text-2xl">Rs. 1499 /-</span></p>
+            <span class="bg-blue-600 text-white px-2 rounded-lg absolute top-5">30% OFF</span>
+        </div>
+
+
+
+        <div class="p-4 rounded-lg bg-gray-200 relative">
+            <img src="https://hamroelectronics.com.np/images/product/JRMXDZVAS648_1637641087.jpg" alt="" class="w-full rounded-t-lg">
+            <p class="text-lg">Bolano Golden Stripe Watch For Ladies</p>
+            <p><span class="line-through text-lg font-bold">Rs.2175 /-</span> <span class="font-bold text-2xl">Rs. 1499 /-</span></p>
+            <span class="bg-blue-600 text-white px-2 rounded-lg absolute top-5">30% OFF</span>
+        </div>
+
+
+        <div class="p-4 rounded-lg bg-gray-200 relative">
+            <img src="https://hamroelectronics.com.np/images/product/JRMXDZVAS648_1637641087.jpg" alt="" class="w-full rounded-t-lg">
+            <p class="text-lg">Bolano Golden Stripe Watch For Ladies</p>
+            <p><span class="line-through text-lg font-bold">Rs.2175 /-</span> <span class="font-bold text-2xl">Rs. 1499 /-</span></p>
+            <span class="bg-blue-600 text-white px-2 rounded-lg absolute top-5">30% OFF</span>
+        </div>
+
+
+
+        <div class="p-4 rounded-lg bg-gray-200 relative">
+            <img src="https://hamroelectronics.com.np/images/product/JRMXDZVAS648_1637641087.jpg" alt="" class="w-full rounded-t-lg">
+            <p class="text-lg">Bolano Golden Stripe Watch For Ladies</p>
+            <p><span class="line-through text-lg font-bold">Rs.2175 /-</span> <span class="font-bold text-2xl">Rs. 1499 /-</span></p>
+            <span class="bg-blue-600 text-white px-2 rounded-lg absolute top-5">30% OFF</span>
+        </div>  
+
+        
+    </div>
+
+
+    <div id="modal" class="fixed hidden bg-gray-800 top-0 right-0 left-0 bottom-0 bg-opacity-50 backdrop-blur-sm">
+        <div class="flex items-center justify-center h-full">
+            <div class="bg-white p-10 rounded-lg relative">
+                <h2>This is a display box</h2>
+                <span class="bg-gray-300 px-2 rounded-lg absolute top-2 right-2 cursor-pointer" onclick="hideModal()">X</span>
+            </div>
+        </div>
+    </div>
+
+    <span onclick="showModal()" class="bg-blue-600 px-4 py-2 rounded-lg cursor-pointer">Show Box</span>
+
+
+    <script>
+        function showModal()
+        {
+            document.getElementById('modal').style.display = 'block';
+        }
+        function hideModal()
+        {
+            document.getElementById('modal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
