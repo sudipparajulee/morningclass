@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+      tinymce.init({
+        selector: '#mytextarea'
+      });
+    </script> -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js"
+      referrerpolicy="origin"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tinymce/tinymce-jquery@2/dist/tinymce-jquery.min.js"></script>
+
+    <style>
+        .mygradient{
+            background: rgb(255,0,0);
+background: linear-gradient(99deg, rgba(255,0,0,1) 0%, rgba(0,35,255,1) 35%, rgba(255,0,0,1) 100%);
+        }
+    </style>
+ 
+</head>
+<body>
+    <div class="bg-gradient-to-b from-blue-600 flex h-full w-full justify-center items-center">
+        <form action="" class="w-6/12 bg-gray-200 rounded-lg p-6">
+
+            <a href="#" class="bg-gradient-to-b from-red-500 to-red-200 hover:from-blue-500 hover:to-blue-300 px-4 py-2 rounded-lg shadow-xl hover:shadow-lg">Click Here</a>
+            <h1 class="font-bold text-4xl text-center">Enter Details</h1>
+
+            <input type="text" placeholder="Title" class="block w-full p-4">
+
+            <textarea id="mytextarea" class="mt-5 w-full"></textarea>
+
+            <div class="bg-white mt-5">
+                <canvas id="myChart"></canvas>
+              </div>
+        </form>
+        
+    </div>
+
+    
+      
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      
+      <script>
+        const ctx = document.getElementById('myChart');
+      
+        new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: ['2023-05-13', '2023-05-14', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+              label: 'No of Visits',
+              data: [12, 19, 3, 5, 2, 3],
+              borderWidth: 1
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+      </script>
+       
+    <script>
+        tinymce.init({
+  selector: 'textarea'
+});
+    </script>
+</body>
+</html>
